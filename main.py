@@ -36,7 +36,7 @@ def main():
         elif option == "5":
             contactBook.sortByFirst()
         elif option == "6":
-            contactBook.sortBylast()
+            contactBook.sortByLast()
 
 if __name__ == '__main__':
     main()

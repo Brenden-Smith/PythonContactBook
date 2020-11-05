@@ -30,7 +30,12 @@ class Contacts():
         p = self.book
 
     def sortByLast(self):
-        p = self.book
-        
+        p = sorted((self.book).items(), key=lambda x: x[1], reverse=True)
+
+        for i in p:
+            print(i[0], i[1])
+
+
+
 
 
