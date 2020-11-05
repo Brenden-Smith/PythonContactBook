@@ -14,6 +14,8 @@ def main():
             2. Remove contact
             3. Search for contact
             4. View all contacts
+            5. Sort by first name
+            6. Sort by last name
         """)
         option = input()
         if option == "1":
@@ -31,6 +33,10 @@ def main():
         elif option == "3": pass
         elif option == "4":
             contactBook.view()
+        elif option == "5":
+            contactBook.sortByFirst()
+        elif option == "6":
+            contactBook.sortBylast()
 
 if __name__ == '__main__':
     main()
