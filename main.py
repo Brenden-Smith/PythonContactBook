@@ -18,24 +18,30 @@ def main():
             6. Sort by last name
         """)
         option = input()
-        if option == "1":
+        if option == "1": # Add
             firstName = input("First Name: ")
             lastName = input("Last Name: ")
             phoneNumber = input("Phone Number: ")
             address = input("Address: ")
             contactBook.add(firstName, lastName, phoneNumber, address)
-        elif option == "2":
+        elif option == "2": # Remove
             if contactBook.n == 0:
                 print("The contact book is empty.")
             else:
                 name = input("Enter the name you would like to remove from the book:")
                 contactBook.remove(name)
-        elif option == "3": pass
-        elif option == "4":
+        elif option == "3": # Search
+            if contactBook.s == 1:
+                name=input("Enter first name: ")
+                contactBook.search(name)
+            else:
+                name = input("Enter first name: ")
+                contactBook.search(name)
+        elif option == "4": # View
             contactBook.view()
-        elif option == "5":
+        elif option == "5": # Sort by first name
             contactBook.sortByFirst()
-        elif option == "6":
+        elif option == "6": # Sort by last name
             contactBook.sortByLast()
 
 if __name__ == '__main__':
